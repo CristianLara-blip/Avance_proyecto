@@ -1,0 +1,341 @@
+<nav id="navbar-main"
+  class="procesos navbar navbar-main navbar-expand-lg navbar-transparent headroom headroom--top headroom--pinned">
+  <div class="container">
+    <a class="navbar-brand mr-lg-7" [routerLink]="['/home']">
+      <img class="logo1 align-items-lg-center" src="./assets/img/navbar/logo.png">
+      <img class="logo2 align-items-lg-center" src="./assets/img/navbar/logo2.png">
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-collapse collapse" id="navbarSupportedContent">
+      <div class="navbar-collapse-header">
+        <div class="row">
+          <div class="col-6 collapse-brand">
+            <a [routerLink]="['/home']">
+              <img src="./assets/img/brand/blue.png">
+            </a>
+          </div>
+          <div class="col-6 collapse-close">
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span></span>
+              <span></span>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <ul class="navbar-nav navbar-nav-hover align-items-lg-center ml-lg-auto">
+
+        <li class="nav-item dropdown">
+          <a [routerLink]="['/home']" class="nav-link no-caret" data-toggle="dropdown" role="button">
+            <span class=" letra enca nav-link-inner--text"><strong>Inicio</strong></span>
+          </a>
+        </li>
+        <li class="nav-item dropdown">
+          <a [routerLink]="['/organizaciones']" class="nav-link no-caret" data-toggle="dropdown" role="button">
+            <span class=" letra enca nav-link-inner--text"><strong>Organizaciones</strong></span>
+          </a>
+        </li>
+      </ul>
+      <ul class="navbar-nav align-items-lg-center">
+        <li class="nav-item d-none d-lg-block ml-lg-3">
+          <a data-bs-toggle="modal" data-bs-target="#exampleModal2" class="btn btn-neutral btn-icon">
+            <span class="letra enca nav-link-inner--text text-success">iniciar sesión</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Modal iniciar sesion-->
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered  d-flex justify-content-center letra">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img class="logo3 align-items-lg-center" src="./assets/img/navbar/logo.png">
+        <img class="ml-2 logo align-items-lg-center" src="./assets/img/navbar/logo3.png">
+        <div class="form-floating mb-3 mt-2">
+          <input type="text" class="form-control" id="floatingInput" placeholder="N° 00000000">
+          <label for="floatingInput">D.N.I.</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="password" class="form-control" id="floatingPassword" placeholder="Contraseña">
+          <label for="floatingPassword">Contraseña</label>
+        </div>
+        <a href="" data-bs-toggle="modal" data-bs-target="#staticBackdrop">¿Olvidastes tu contraseña?</a><br>
+        <div class="d-grid gap-2 mt-3">
+          <button type="button" class="btn btn-secondary">Iniciar sesión</button>
+          <button data-bs-toggle="modal" data-bs-target="#exampleModal" type="button" class="btn btn-primary">Crea tu cuenta</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal recuperar contraseña -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+  aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered d-flex justify-content-center letra">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img class="logo3 align-items-lg-center" src="./assets/img/navbar/logo.png">
+        <img class="ml-2 logo align-items-lg-center" src="./assets/img/navbar/logo3.png">
+        <div class="form-floating mb-3 mt-2">
+          <input type="text" class="form-control form-control-sm" id="floatingInput" placeholder="name@example.com">
+          <label for="floatingInput">Ingrese su correo electrónico</label>
+        </div>
+        <div class="d-grid-2">
+          <button data-bs-toggle="modal" data-bs-target="#exampleModal2" type="button"
+            class="btn btn-light">REGRESAR</button>
+          <button data-bs-toggle="modal" data-bs-target="#staticBackdrop2" type="button"
+            class="btn btn-secondary ml-3">CONTINUAR</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal recuperar contraseña ingresar codigo -->
+<div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+  aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered d-flex justify-content-center letra">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img class="logo3 align-items-lg-center" src="./assets/img/navbar/logo.png">
+        <img class="ml-2 logo align-items-lg-center" src="./assets/img/navbar/logo3.png">
+        <h2 class="m-2 simple"><b> RECUPERAR CONTRASEÑA </b></h2>
+        <P class="letra2">Ingrese el código que se le envio a su correo electrónico previamente</P>
+        <div class="form-floating mb-3 mt-2">
+          <input type="text" class="form-control form-control-sm" id="floatingInput" placeholder="Código">
+          <label for="floatingInput">Ingrese su código</label>
+        </div>
+        <div class="d-grid-2">
+          <button data-bs-toggle="modal" data-bs-target="#staticBackdrop" type="button"
+            class="btn btn-light">REGRESAR</button>
+          <button data-bs-toggle="modal" data-bs-target="#staticBackdrop3" type="button"
+            class="btn btn-secondary ml-3">CONTINUAR</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal recuperar contraseña ingresar nueva contraseña -->
+<div class="modal fade" id="staticBackdrop3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+  aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered d-flex justify-content-center letra">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img class="logo3 align-items-lg-center" src="./assets/img/navbar/logo.png">
+        <img class="ml-2 logo align-items-lg-center" src="./assets/img/navbar/logo3.png">
+        <h2 class="m-2 simple"><b> RECUPERAR CONTRASEÑA </b></h2>
+        <div class="form-floating mb-3 mt-2">
+          <input type="text" class="form-control form-control-sm" id="floatingInput" placeholder="Nueva contraseña">
+          <label for="floatingInput">Ingrese su nueva contraseña</label>
+        </div>
+        <div class="form-floating mb-3 mt-2">
+          <input type="text" class="form-control form-control-sm" id="floatingInput"
+            placeholder="Conformidad de contraseña">
+          <label for="floatingInput">Confirme su nueva contraseña</label>
+        </div>
+        <div class="d-grid-2">
+          <button data-bs-toggle="modal" aria-label="Close" type="button" class="btn btn-danger">CANCELAR</button>
+          <button data-bs-toggle="modal" data-bs-target="#exampleModal2" type="button" class="btn btn-secondary ml-3">
+            ACEPTAR </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal registrarse-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered d-flex justify-content-center letra">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img class="logo3 align-items-lg-center" src="./assets/img/navbar/logo.png">
+        <img class="ml-2 logo align-items-lg-center" src="./assets/img/navbar/logo3.png">
+        <div class="row g-2 mt-1">
+          <div class="col-md-5">
+            <div class="">
+              <input type="text" class="form-control form-control-sm" placeholder="D.N.I." >
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="">
+              <input type="text" class="form-control form-control-sm"  placeholder="Nombre" >
+            </div>
+          </div>
+        </div> 
+        <div class="row g-2 mt-1">
+          <div class="col-md">
+            <div class="">
+              <input type="text" class="form-control form-control-sm" placeholder="Apellido paterno" >
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="">
+              <input type="text" class="form-control form-control-sm"  placeholder="Apellido materno" >
+            </div>
+          </div>
+        </div>
+        <div class="row g-2 mt-1">
+          <div class="col-md">
+            <div class="">
+              <input type="email" class="form-control form-control-sm" placeholder="Correo electrónico" >
+            </div>
+          </div>
+        </div>
+        <div class="row g-2 mt-1">
+          <div class="col-md-7">
+            <div class="">
+              <input type="date" class="form-control form-control-sm" placeholder="Fecha de nacimiento" >
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="">
+              <input type="text" class="form-control form-control-sm"  placeholder="Teléfono" >
+            </div>
+          </div>
+        </div>
+        <div class="row g-2 mt-1">
+          <div class="col-md">
+            <div class="">
+              <input type="text" class="form-control form-control-sm" placeholder="Dirección" >
+            </div>
+          </div>
+        </div>
+        <div class="row g-2 mt-1">
+          <div class="col-md">
+            <div class="">
+              <input type="password" class="form-control form-control-sm" placeholder="Contraseña" >
+            </div>
+          </div>
+        </div>
+        <div class="row g-2 mt-1">
+          <div class="col-md">
+            <div class="">
+              <input type="password" class="form-control form-control-sm" placeholder="Confirmar contraseña" >
+            </div>
+          </div>
+        </div>
+         <br>
+        <div class="d-grid gap-2">
+          <button type="button" class="btn btn-secondary">Registrate</button>
+          <button data-bs-toggle="modal" data-bs-target="#exampleModal2" type="button" class="btn btn-primary">Inicie
+            sesión</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<main>
+  <div class="position-relative">
+    <!-- Hero for FREE version -->
+    <section class="sociales pb-245">
+    </section>
+
+    <div class="container mt-4 mb-5">
+      <div class="row">
+        <div class="col ">
+          <button type="button" data-aos="fade-down-right" class="letra2 btn btn-success">Excel</button>
+          <button type="button" data-aos="fade-down-right" class="ml-2 letra2 btn btn-danger">PDF</button>
+        </div>
+
+        <div class="col d-flex justify-content-end">
+        </div>
+      </div>
+
+      <h2 data-aos="fade-down" class="m-2 simple text-center text-success"><b> ORGANIZACIONES SOCIALES </b></h2>
+      <form data-aos="fade-right" class="letra2 d-flex justify-content-center" role="search">
+        <div class="col-md-4"></div>
+        <input class="form-control me-2 buscar2" type="search" placeholder="Buscar" aria-label="Search">
+        <button type="button" class="buscar2 letra2 btn btn-success">buscar</button>
+        <div class="col-md-3"></div>
+      </form>
+
+      <div class="table-responsive">
+        <table data-aos="zoom-in" class="mt-3 text-white letra2 table table-bordered table-sm">
+          <thead>
+            <tr class="text-white tablaos text-center">
+              <th scope="col"></th>
+              <th scope="col">NOMBRE</th>
+              <th scope="col">TIPO</th>
+
+              <th scope="col">REPRESENTANTE</th>
+              <th scope="col">ZONA</th>
+              <th scope="col">NIVEL</th>
+
+              <th scope="col">INICIO DE VIGENCIA</th>
+              <th scope="col">FIN DE VIGENCIA</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="celdas">
+              <th class="celda2" scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<footer class="footer has" >
+  <div class="container">
+    <hr>
+    <div class="mt-1 row align-items-center justify-content-md-between">
+      <div class="text-center col-md-4 d-flex">
+          <a target="_blank"  href="https://www.instagram.com/municipalidadechaclacayo/?hl=es">
+         <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png" style="width:30px;">
+          </a>
+          <a target="_blank" class="ml-2 mr-1" href="https://www.facebook.com/MuniChacla/">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/768px-Facebook_Logo_%282019%29.png" style="width:30px;">
+          </a>
+          <a target="_blank" class="mt-1 ml-1" href="https://www.youtube.com/channel/UCI4lX3ick2HihMgxf8etIZQ/videos">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" style="width:35px;">
+          </a>
+      </div>
+
+      <div class="text-center col-md-4 letra3">
+        <p class="mt-3"><strong>RUOS-MC</strong></p>
+      </div>
+      <div class="text-center col-md-4 letra3 justify-content-end d-flex">
+        <p class="mt-3"><strong>MUNICIPALIDAD DE CHACLACAYO</strong>​</p>
+      </div>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,42 @@
+$derecha: 7px;
+$ancho: 45px;
+$ancho2: 35px;
+$enca: 14px;
+
+.btn {
+    padding: 0.4rem 1rem;
+    border: 0px solid transparent;
+    border-radius: 0.8rem;
+}
+
+
+.enca{
+    font-size: $enca;
+}
+
+
+
+.logo1 {
+    height: $ancho;
+}
+
+.logo2 {
+    margin-left: $derecha;
+    height: $ancho2;
+}
+
+.headroom--not-top {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: #000000b6 !important;
+    box-shadow: 0 1px 10px rgb(130 130 134 / 10%);
+}
+
+.letra{
+    font-family: sans-serif;
+
+}
+
+.text-success {
+    color: #39b530!important;
+}
